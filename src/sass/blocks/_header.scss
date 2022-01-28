@@ -1,0 +1,115 @@
+.header {
+    width: 100%;
+    min-height: 679px;
+    background: url('../img/bg/promo_bg.png') center center / cover no-repeat;
+    padding: 32px 0 100px 0;
+    &__links {
+        width: 40%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__call {
+        text-decoration: none;
+        color: #FFFFFF;
+        &:hover {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__call {
+        display: flex;
+        flex-direction: column;
+    }
+    &__phone {
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+    &__logo {
+        background: $main-color;
+        border-radius: 20px;
+        width: 198px;
+        height: 56px;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #FFFFFF;
+    }
+    &__links {
+        a {
+            position: relative;
+            font-weight: 200;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #FFFFFF;
+            &:after {
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: $main-color;
+                content: "";
+                transition: width 0.3s ease-out;
+            }
+            &:hover::after,
+            &:focus::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.promo {
+    margin-top: 100px;
+    max-width: 630px;
+    min-height: 380;
+    margin-left: auto;
+    &__wrapper {
+        display: flex;
+    }
+    &__abilities-item {
+        width: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+    &__abilities-descr {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__link-catalog {
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: right;
+        color: #FFFFFF;
+        a {
+            font-weight: 500;
+            font-size: 16px;
+            text-align: right;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}

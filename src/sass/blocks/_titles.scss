@@ -1,0 +1,51 @@
+.title {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &__promo {
+        text-align: right;
+    }
+    &__order {
+        color: #000;
+        font-size: 19px;
+    }
+    &__benefits {
+        margin-top: 31px;
+        font-size: 26px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__left {
+        font-weight: bold;
+        font-size: 27px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__catalog {
+        font-weight: normal;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #0D0D0D;
+    }
+    &__catalog-item {
+        font-size: 16px;
+        line-height: 25px;
+        color: #0D0D0D;
+        &-modal {
+            font-size: 24px;
+            text-align: start;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 34px;
+        }
+    }
+    &__size {
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #1E1E1E;
+    }
+}

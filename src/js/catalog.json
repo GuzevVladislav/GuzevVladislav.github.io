@@ -1,0 +1,81 @@
+[{
+        "id": "0001",
+        "category": 1,
+        "name": "Йорк",
+        "size": {
+            "folded": "420*250",
+            "decomposed": "420*250",
+            "sleepingPlace": "420*250"
+        },
+        "description": "Модульная система позволяет подобрать размеры дивана именно под вас",
+        "subtitle": "модульная система",
+        "photos": {
+            "first": "img/goods/york.png",
+            "second": "img/goods/test-tem.png",
+            "third": "img/slider/slide-1.png"
+        },
+        "newPrice": "9 999",
+        "oldPrice": "12 000"
+
+    },
+    {
+        "id": "0002",
+        "category": 2,
+        "name": "Прага",
+        "size": {
+            "folded": "250*100*60",
+            "decomposed": "250*100*60",
+            "sleepingPlace": "250*100"
+        },
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, praesentium. Aspernatur architecto cupiditate",
+        "subtitle": "Good sofa",
+        "photos": {
+            "first": "img/goods/test-tem.png",
+            "second": "img/slider/slide-1.png",
+            "third": "img/goods/test-tem.png"
+        },
+        "newPrice": "9 999",
+        "oldPrice": "12 000"
+
+    },
+    {
+        "id": "0001",
+        "category": 3,
+        "name": "Атаманка",
+        "size": {
+            "folded": "250*100*60",
+            "decomposed": "250*100*60",
+            "sleepingPlace": "250*100"
+        },
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, praesentium. Aspernatur architecto cupiditate",
+        "subtitle": "Good sofa",
+        "photos": {
+            "first": "img/goods/test-tem.png",
+            "second": "img/goods/test-tem.png",
+            "third": "img/slider/slide-1.png"
+        },
+        "newPrice": "9 999",
+        "oldPrice": "12 000"
+
+    },
+    {
+        "id": "0002",
+        "category": 3,
+        "name": "Прага",
+        "size": {
+            "folded": "250*100*60",
+            "decomposed": "250*100*60",
+            "sleepingPlace": "250*100"
+        },
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, praesentium. Aspernatur architecto cupiditate",
+        "subtitle": "Good sofa",
+        "photos": {
+            "first": "img/goods/test-tem.png",
+            "second": "img/slider/slide-1.png",
+            "third": "img/goods/test-tem.png"
+        },
+        "newPrice": "9 999",
+        "oldPrice": "12 000"
+
+    }
+]
