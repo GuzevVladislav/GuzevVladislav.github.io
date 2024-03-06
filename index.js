@@ -18,12 +18,12 @@ del.addEventListener('click', ()=>{
 
 const solve = () => 
 {
-    
     switch (arr[1])
     {
         case "+": 
         {
             input.value = arr[0] + arr[2];
+
             break;
         }
         case "-": 
@@ -43,7 +43,30 @@ const solve = () =>
                 input.type = "text"
                 input.value = "infinity"
                 
-            } else input.value = arr[0] / arr[2];
+            } else 
+            {
+                input.value = arr[0] / arr[2];
+            }
+            break;
+        }
+        case "**": 
+        {
+            input.value = arr[0] * arr[0];
+            break;
+        }
+        case "sqrt": 
+        {
+            input.value = Math.sqrt(arr[0]);
+            break;
+        }
+        case "xy": 
+        {
+            input.value = Math.pow(arr[0], arr[2]);
+            break;
+        }
+        case "%": 
+        {
+            input.value =  arr[0] % arr[2];
             break;
         }
     }
@@ -54,10 +77,13 @@ clean.addEventListener('click', ()=> {clear()})
 
 const clear = () =>
 {
-    input.value = "";
-    arr = arr.fill(undefined)
-
-    input.type = "number"
+    if(input.value != '-')
+    {
+        input.value = "";
+        arr = arr.fill(undefined)
+        input.type = "number"
+    }
+    
 }
 
 action.forEach(el => {
@@ -65,6 +91,10 @@ action.forEach(el => {
         arr[0] = parseInt(input.value);
         arr[1] = el.value;
         input.value = "";
+        if(el.value === "**" || el.value === "sqrt")
+        {
+            solve();
+        }
     })
 })
 
@@ -79,7 +109,10 @@ equale.addEventListener('click', () =>{
 numbers.forEach(el => {
     
     el.addEventListener('click', () =>{
-        input.type = "number"
+
+        
+            input.type = "number"
+        
         input.value += el.value;
         
     })
@@ -89,8 +122,10 @@ numbers.forEach(el => {
 
 
 
+
 const theme = document.getElementById('theme');
 const circle = document.getElementById('circle');
+
 
 theme.addEventListener('click', () => {
     const style = window.getComputedStyle(circle);
@@ -105,12 +140,12 @@ theme.addEventListener('click', () => {
         circle.style.removeProperty('right')
         circle.style.left = "0";
         changeTheme(0);
-
     }
 })
 
 const changeTheme = (light) => 
 {
+   
     if(!light)
     {
         document.querySelector("body").style.backgroundColor = "#fff";

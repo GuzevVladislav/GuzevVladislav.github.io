@@ -94,8 +94,11 @@ input
     justify-content: space-between;
 }
 
-
-#actions
+sup
+{
+    font-size: 12px;
+}
+.actions
 {
     display: flex;
     flex-direction: column;
@@ -108,7 +111,10 @@ input
     width: 70px;
 }
 
-
+#actions2 button
+{
+    width: 24%;
+}
 
 #swich
 {
