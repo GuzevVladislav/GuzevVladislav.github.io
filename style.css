@@ -57,6 +57,9 @@ button
     margin: 0 auto;
     margin-top: 50px;
     width: 320px;
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 input 
