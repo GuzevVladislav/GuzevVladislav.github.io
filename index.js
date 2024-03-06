@@ -66,7 +66,11 @@ const solve = () =>
         }
         case "%": 
         {
-            input.value =  arr[0] % arr[2];
+            input.value =  arr[0] * 0.01;
+            
+            arr[0] = input.value;
+            arr[1] = undefined;
+            console.log(arr[0], arr[1])
             break;
         }
     }
@@ -77,7 +81,7 @@ clean.addEventListener('click', ()=> {clear()})
 
 const clear = () =>
 {
-    if(input.value != '-')
+    if(arr[1] != '%')
     {
         input.value = "";
         arr = arr.fill(undefined)
@@ -88,10 +92,10 @@ const clear = () =>
 
 action.forEach(el => {
     el.addEventListener('click', ()=>{
-        arr[0] = parseInt(input.value);
+        arr[0] = parseFloat(input.value);
         arr[1] = el.value;
         input.value = "";
-        if(el.value === "**" || el.value === "sqrt")
+        if(el.value === "**" || el.value === "sqrt" || el.value === "%")
         {
             solve();
         }
@@ -107,16 +111,10 @@ equale.addEventListener('click', () =>{
 
 
 numbers.forEach(el => {
-    
     el.addEventListener('click', () =>{
-
-        
-            input.type = "number"
-        
+        input.type = "number"
         input.value += el.value;
-        
     })
-
 })
 
 
