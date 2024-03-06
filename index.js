@@ -112,8 +112,11 @@ equale.addEventListener('click', () =>{
 
 numbers.forEach(el => {
     el.addEventListener('click', () =>{
+        
+        if(input.value === '' && el.value === "0") return;
         input.type = "number"
         input.value += el.value;
+        
     })
 })
 
