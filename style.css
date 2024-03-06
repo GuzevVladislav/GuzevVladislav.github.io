@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+button 
+{
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #7e7e7e13;
+}
+
+#theme
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.abs
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid teal;
+    width:  70px;
+    height: 30px;
+}
+#circle
+{
+    width: 29px;
+    height: 29px;
+    border-radius: 15px;
+    background-color: teal;
+    border: 1px solid teal;
+    margin: 0;
+    position: absolute;
+    
+}
+
+.container
+{
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 137px;
+}
+
+input 
+{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    height: 30px;
+    background: transparent;
+}
+
+.num
+{
+    width: 30.5%;
+    margin-bottom: 5px;
+}
+
+.function_btn
+{
+    width: 31.3%;
+}
+
+
+#zero
+{
+    width: 100%;
+}
+
+#numbers
+{
+    width: 70%;
+}
+
+.wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#actions
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.action
+{
+    margin-bottom: 5px;
+}
+
+
+
+#swich
+{
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#toggle
+{
+    height: 18px;
+    width: 18px;
+    border-radius: 10px;
+    background: teal;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid teal;
+}
