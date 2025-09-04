@@ -163,4 +163,21 @@ td {
   .advantages__item {
     margin-bottom: 40px;
   }
+  .table__header {
+    font-size: 20px;
+  }
+  .about__container {
+  }
+}
+
+@media (min-width: 505px) and (max-width: 900px) {
+  .about__container {
+    height: 270px;
+  }
+}
+
+@media (max-width: 505px) {
+  .about__container {
+    height: 180px;
+  }
 }
