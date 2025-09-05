@@ -41,6 +41,7 @@
   max-width: 900px;
   display: flex;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .about__header {
@@ -79,6 +80,12 @@ td {
   padding: 20px !important;
 }
 
+.portfolio {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 145px;
+}
+
 .portfolio__header,
 .advantages__header {
   font-size: 30px;
@@ -88,6 +95,10 @@ td {
 .advantages__subtext {
   font-size: 20px;
   font-weight: lighter;
+}
+
+.carousel {
+  margin-top: 40px;
 }
 
 .advantages__check {
@@ -115,6 +126,8 @@ td {
 }
 .advantages {
   padding-bottom: 90px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .about__img {
@@ -146,6 +159,35 @@ td {
 
 .table__price {
   font-size: 18px;
+}
+
+footer {
+  padding: 90px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__header {
+  margin-bottom: 45px;
+  font-size: 12px;
+}
+
+.footer__tel,
+.footer__email {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.footer__adress {
+  margin-top: 45px;
+  font-size: 14px;
+  margin-bottom: 45px;
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 900px) {
